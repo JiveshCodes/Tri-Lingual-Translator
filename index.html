@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multilingual Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌍 Multilingual LSTM Translator</h1>
+
+    <textarea id="inputText" placeholder="Enter text..."></textarea>
+
+    <div class="dropdowns">
+        <select id="sourceLang">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Punjabi</option>
+        </select>
+
+        <select id="targetLang">
+            <option>Hindi</option>
+            <option>English</option>
+            <option>Punjabi</option>
+        </select>
+    </div>
+
+    <button onclick="translateText()">Translate</button>
+
+    <textarea id="outputText" placeholder="Translation..." readonly></textarea>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
